@@ -29,6 +29,7 @@
     "ngx-toastr": "9.1.2",
     "node-sass": "^4.13.0",
     "nouislider": "13.1.1",
+    "@types/googlemaps": "^3.38.1",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"

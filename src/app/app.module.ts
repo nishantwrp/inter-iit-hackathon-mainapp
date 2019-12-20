@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginRegisterComponent } from './login-register/login-register.component';
 import { ProfileComponent } from './profile/profile.component';
+import { MapLandingComponent } from './map-landing/map-landing.component';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -16,7 +17,8 @@ import { RouterModule } from '@angular/router';
   declarations: [
     AppComponent,
     LoginRegisterComponent,
-    ProfileComponent
+    ProfileComponent,
+    MapLandingComponent
   ],
   imports: [
     BrowserModule,
