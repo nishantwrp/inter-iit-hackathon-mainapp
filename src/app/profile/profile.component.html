@@ -28,8 +28,10 @@
     </div>
 
     <div class="container" style="text-align: center;margin-top: 20px; margin-bottom: 10px;">
-        <span style="font-family: 'Lilita One', cursive; font-size: 25px;" class="timer"  data-to="1273" data-speed="1500">1273 </span> 
-        <span style="padding-left: 5px;"><i class="ni ni-credit-card" style="font-size: 20px; color: rgb(46, 231, 40);"></i></span>
+        <span style="font-family: 'Lilita One', cursive; font-size: 25px;" class="timer" data-to="1273"
+            data-speed="1500">1273 </span>
+        <span style="padding-left: 5px;"><i class="ni ni-credit-card"
+                style="font-size: 20px; color: rgb(46, 231, 40);"></i></span>
     </div>
     <div class="card-body pt-0 pt-md-4">
         <div class="row">
@@ -58,45 +60,45 @@
                 <i class="ni location_pin mr-2"></i>Bucharest, Romania
             </div>
             <hr class="my-4" />
-            <button type="button" class="btn btn-primary btn-lg"
-                style="width: 100%; border-radius: 100px;" data-toggle="collapse" data-target="#leaderboardContent"
-                aria-expanded="false" aria-controls="leaderboardContent">Leaderboard</button>
-            <br>
-            <br>
-            <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
-                <button type="button" class="btn btn-primary">City</button>
-                <button type="button" class="btn btn-secondary">State</button>
-                <button type="button" class="btn btn-secondary">Country</button>
+            <button type="button" class="btn btn-primary btn-lg" style="width: 100%; border-radius: 100px;"
+                data-toggle="collapse" data-target="#leaderboardContent" aria-expanded="false"
+                aria-controls="leaderboardContent" (click)="showLeaderboard()">Leaderboard</button>
+            <br *ngIf="show_leaderboard">
+            <br *ngIf="show_leaderboard">
+            <div class="btn-group btn-group-sm" role="group" *ngIf="show_leaderboard">
+                <button type="button" class="btn btn-secondary" [class.btn-primary]="city_active" [class.btn-secondary]="!city_active" (click)="cityLeaderboard()">City</button>
+                <button type="button" class="btn btn-secondary" [class.btn-primary]="state_active" [class.btn-secondary]="!state_active" (click)="stateLeaderboard()">State</button>
+                <button type="button" class="btn btn-secondary" [class.btn-primary]="country_active" [class.btn-secondary]="!country_active" (click)="countryLeaderboard()">Country</button>
             </div>
-            <br>
-            <br>
-            <div class="table-responsive">
+            <br *ngIf="show_leaderboard">
+            <br *ngIf="show_leaderboard">
+            <div class="table-responsive" *ngIf="show_leaderboard">
                 <table class="table align-items-center table-flush">
-                  <thead class="thead-light">
-                    <tr>
-                      <th scope="col">Name</th>
-                      <th scope="col">Experience</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">
-                        <div class="media align-items-center">
-                          <a href="#" class="avatar rounded-circle mr-3">
-                            <img alt="Image placeholder" src="assets/img/theme/bootstrap.jpg">
-                          </a>
-                          <div class="media-body">
-                            <span class="mb-0 text-sm">Nishant Mittal</span>
-                          </div>
-                        </div>
-                      </th>
-                      <td>
-                        Pro
-                      </td>
-                    </tr>
-                  </tbody>
+                    <thead class="thead-light">
+                        <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Experience</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let obj of leaderboard">
+                            <th scope="row">
+                                <div class="media align-items-center">
+                                    <a href="#" class="avatar rounded-circle mr-3">
+                                        <img alt="Image placeholder" src="assets/img/theme/bootstrap.jpg">
+                                    </a>
+                                    <div class="media-body">
+                                        <span class="mb-0 text-sm">{{ obj.name }}</span>
+                                    </div>
+                                </div>
+                            </th>
+                            <td>
+                                {{ obj.experience }}
+                            </td>
+                        </tr>
+                    </tbody>
                 </table>
-              </div>
+            </div>
         </div>
     </div>
 </div>
