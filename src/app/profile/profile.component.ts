@@ -34,7 +34,6 @@ export class ProfileComponent implements OnInit {
     this.city_active = true;
     this.state_active = false;
     this.country_active = false;
-    this.show_leaderboard = false;
     this.leaderboard = this.city_leaderboard;
   }
 
@@ -63,9 +62,5 @@ export class ProfileComponent implements OnInit {
       this.country_active = true;
       this.leaderboard = this.country_leaderboard;
     }
-  }
-
-  showLeaderboard() {
-    this.show_leaderboard = !this.show_leaderboard;
   }
 }

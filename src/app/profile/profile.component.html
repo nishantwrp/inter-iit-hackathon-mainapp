@@ -60,19 +60,17 @@
                 <i class="ni location_pin mr-2"></i>Bucharest, Romania
             </div>
             <hr class="my-4" />
-            <button type="button" class="btn btn-primary btn-lg" style="width: 100%; border-radius: 100px;"
-                data-toggle="collapse" data-target="#leaderboardContent" aria-expanded="false"
-                aria-controls="leaderboardContent" (click)="showLeaderboard()">Leaderboard</button>
-            <br *ngIf="show_leaderboard">
-            <br *ngIf="show_leaderboard">
-            <div class="btn-group btn-group-sm" role="group" *ngIf="show_leaderboard">
+            Leaderboard
+            <br>
+            <br>
+            <div class="btn-group btn-group-sm" role="group">
                 <button type="button" class="btn btn-secondary" [class.btn-primary]="city_active" [class.btn-secondary]="!city_active" (click)="cityLeaderboard()">City</button>
                 <button type="button" class="btn btn-secondary" [class.btn-primary]="state_active" [class.btn-secondary]="!state_active" (click)="stateLeaderboard()">State</button>
                 <button type="button" class="btn btn-secondary" [class.btn-primary]="country_active" [class.btn-secondary]="!country_active" (click)="countryLeaderboard()">Country</button>
             </div>
-            <br *ngIf="show_leaderboard">
-            <br *ngIf="show_leaderboard">
-            <div class="table-responsive" *ngIf="show_leaderboard">
+            <br>
+            <br>
+            <div class="table-responsive">
                 <table class="table align-items-center table-flush">
                     <thead class="thead-light">
                         <tr>
@@ -100,5 +98,29 @@
                 </table>
             </div>
         </div>
+        <hr class="my-4" />
+        <div class="table-responsive">
+            <table class="table align-items-center table-flush">
+                <thead class="thead-light">
+                    <tr>
+                        <th scope="col">History</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            Project 1
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Project 2
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <button type="button" class="btn btn-primary btn-block" style="border-radius: 100px;">Show more</button>
     </div>
+    
 </div>
