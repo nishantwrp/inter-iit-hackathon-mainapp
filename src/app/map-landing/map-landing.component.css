@@ -1,4 +1,27 @@
+#container-fluid {
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #DDD;
+}
+
+#icons {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 99;
+    font-family: 'Lilita One', cursive;
+    font-size: 1.3pc;
+    text-shadow:
+    -1px -1px 0 rgb(255, 255, 255),
+    1px -1px 0 rgb(255, 255, 255),
+    -1px 1px 0 rgb(255, 255, 255),
+    1px 1px 0 rgb(255, 255, 255);  
+}
+
 #map {
-    height: 500px;
+    height: 100pc;
     width: 100%;
 }
