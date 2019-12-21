@@ -23,8 +23,7 @@ export class ProfileComponent implements OnInit {
   city_active: Boolean;
   state_active: Boolean;
   country_active: Boolean;
-  show_leaderboard: Boolean;
-
+  
   constructor() { }
 
   ngOnInit() {
