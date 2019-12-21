@@ -16,7 +16,7 @@ export class MapLandingComponent implements AfterViewInit {
 
   mapOptions: google.maps.MapOptions = {
     center: this.coordinates,
-    zoom: 8,
+    zoom: 16,
     disableDefaultUI: true,
     gestureHandling: 'greedy',
     styles: [
@@ -304,22 +304,22 @@ export class MapLandingComponent implements AfterViewInit {
 
   features = [
     {
-      position: new google.maps.LatLng(-32.91721, 301.22630),
+      position: new google.maps.LatLng(29.872047, 77.896644),
       type: 'diamond'
     }, {
-      position: new google.maps.LatLng(-33.91872, 180.23089),
+      position: new google.maps.LatLng(29.868177, 77.894421),
       type: 'diamond'
     }, {
-      position: new google.maps.LatLng(-23.91790, 201.23463),
+      position: new google.maps.LatLng(29.868624, 77.892329),
       type: 'diamond'
     }, {
-      position: new google.maps.LatLng(-35.916365282092855, 234.22937399734496),
+      position: new google.maps.LatLng(29.867554, 77.894003),
       type: 'ruby'
     }, {
-      position: new google.maps.LatLng(-35.91665018901448, 359.2282474695587),
+      position: new google.maps.LatLng(29.865526, 77.896664),
       type: 'ruby'
     }, {
-      position: new google.maps.LatLng(-25.91790, 201.23463),
+      position: new google.maps.LatLng(29.866298, 77.894843),
       type: 'diamond'
     }
   ];

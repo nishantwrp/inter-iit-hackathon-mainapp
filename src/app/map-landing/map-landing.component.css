@@ -21,7 +21,22 @@
     1px 1px 0 rgb(255, 255, 255);  
 }
 
+#floatuppericons {
+    margin-left: 0.7pc;
+}
+
+#reportButtonDiv {
+    position: fixed;
+    background-color: #fff;
+    bottom: 0%;
+    height: 25%;
+    width: 100%;
+    padding: 1.2pc;
+    text-align: center;
+    padding-bottom: 10pc;
+}
+
 #map {
-    height: 100pc;
+    height: 40pc;
     width: 100%;
 }
