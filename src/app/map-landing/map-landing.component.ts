@@ -334,7 +334,7 @@ export class MapLandingComponent implements AfterViewInit {
     '<div id="bodyContent">' +
     '<p>Collect a ' + gem + ' to get <b>' + gempoint + ' points</b>! ' +
     gempur +
-    '<a [routerLink]="[' + link + ']"><button type="button" class="btn btn-outline-danger btn-sm" style="top:0.7pc;">Upload photos</button></a>' +
+    '<a href="' + link + '"><button type="button" class="btn btn-outline-danger btn-sm" style="top:0.7pc;">Upload photos</button></a>' +
     '</div>' +
     '</div>';
   }
