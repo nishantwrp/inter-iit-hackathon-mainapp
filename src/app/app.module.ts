@@ -8,12 +8,12 @@ import { ProfileComponent } from './profile/profile.component';
 import { MapLandingComponent } from './map-landing/map-landing.component';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { StatusComponent } from './status/status.component';
 import { HistoryComponent } from './history/history.component';
+import { WebcamModule } from 'ngx-webcam';
+import { CameraPageComponent } from './camera-page/camera-page.component';
 
 @NgModule({
   declarations: [
@@ -22,14 +22,16 @@ import { HistoryComponent } from './history/history.component';
     ProfileComponent,
     MapLandingComponent,
     StatusComponent,
-    HistoryComponent
+    HistoryComponent,
+    CameraPageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     FormsModule,
-    RouterModule
+    RouterModule,
+    WebcamModule
   ],
   providers: [],
   bootstrap: [AppComponent]

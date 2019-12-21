@@ -1,0 +1,23 @@
+#cameraContainer {
+    background-color: beige;
+    height: 100pc;
+    padding: 1pc;
+    overflow: hidden;
+    text-align: center;
+}
+
+.btn-circle.btn-xl {
+    width: 70px; 
+    height: 70px; 
+    padding: 10px 16px; 
+    border-radius: 35px; 
+    font-size: 12px; 
+    text-align: center; 
+} 
+
+#buttonContainer {
+    position: fixed;
+    bottom: 5%;
+    text-align: center;
+    width: 100%;
+}

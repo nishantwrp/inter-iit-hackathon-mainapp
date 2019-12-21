@@ -6,6 +6,7 @@ import { MapLandingComponent } from './map-landing/map-landing.component';
 import { ProfileComponent } from './profile/profile.component';
 import { StatusComponent } from './status/status.component';
 import { HistoryComponent } from './history/history.component';
+import { CameraPageComponent } from './camera-page/camera-page.component';
 
 const routes: Routes = [
   {
@@ -27,6 +28,10 @@ const routes: Routes = [
   {
     path: 'history',
     component: HistoryComponent
+  },
+  {
+    path: 'camera',
+    component: CameraPageComponent
   }
 ];
 
