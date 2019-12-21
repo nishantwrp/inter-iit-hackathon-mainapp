@@ -285,15 +285,51 @@ export class MapLandingComponent implements AfterViewInit {
     ]
   };
 
-  marker = new google.maps.Marker({
-    position: this.coordinates,
-    map: this.map,
-  });
+  iconBase = 'assets/images/icons/';
+
+  icons = {
+    diamond: {
+      icon: this.iconBase + 'diamondee.png'
+    },
+    ruby: {
+      icon: this.iconBase + '2176077.png'
+    }
+  };
+
+  features = [
+    {
+      position: new google.maps.LatLng(-32.91721, 301.22630),
+      type: 'diamond'
+    }, {
+      position: new google.maps.LatLng(-33.91872, 180.23089),
+      type: 'diamond'
+    }, {
+      position: new google.maps.LatLng(-23.91790, 201.23463),
+      type: 'diamond'
+    }, {
+      position: new google.maps.LatLng(-35.916365282092855, 234.22937399734496),
+      type: 'ruby'
+    }, {
+      position: new google.maps.LatLng(-35.91665018901448, 359.2282474695587),
+      type: 'ruby'
+    }, {
+      position: new google.maps.LatLng(-22.919543720969806, 271.23112279762267),
+      type: 'ruby'
+    }
+  ];
 
   mapInitializer() {
     this.map = new google.maps.Map(this.gmap.nativeElement,
-    this.mapOptions);
-    this.marker.setMap(this.map);
+      this.mapOptions);
+    // tslint:disable-next-line: prefer-for-of
+    for (var i = 0; i < this.features.length; i++) {
+      var marker = new google.maps.Marker({
+        position: this.features[i].position,
+        icon: this.icons[this.features[i].type].icon,
+        map: this.map,
+      });
+    };
+    marker.setMap(this.map);
   }
 
   ngAfterViewInit() {
