@@ -4,6 +4,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { LoginRegisterComponent } from './login-register/login-register.component';
 import { MapLandingComponent } from './map-landing/map-landing.component';
 import { ProfileComponent } from './profile/profile.component';
+import { StatusComponent } from './status/status.component';
+import { HistoryComponent } from './history/history.component';
 
 const routes: Routes = [
   {
@@ -17,6 +19,14 @@ const routes: Routes = [
   {
     path: 'profile',
     component: ProfileComponent
+  },
+  {
+    path: 'status',
+    component: StatusComponent
+  },
+  {
+    path: 'history',
+    component: HistoryComponent
   }
 ];
 

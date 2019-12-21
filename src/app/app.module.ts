@@ -12,13 +12,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
+import { StatusComponent } from './status/status.component';
+import { HistoryComponent } from './history/history.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginRegisterComponent,
     ProfileComponent,
-    MapLandingComponent
+    MapLandingComponent,
+    StatusComponent,
+    HistoryComponent
   ],
   imports: [
     BrowserModule,

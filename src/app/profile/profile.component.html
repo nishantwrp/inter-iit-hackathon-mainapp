@@ -110,6 +110,7 @@
                 <thead class="thead-light">
                     <tr>
                         <th scope="col">History</th>
+                        <th scope="col">Check Status</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -117,16 +118,27 @@
                         <td>
                             Project 1
                         </td>
+                        <a href="/status">
+                        <td>
+                            <button type="button" class="btn btn-outline-primary btn-sm">Status</button>
+                        </td>
+                        </a>
                     </tr>
+                   
                     <tr>
                         <td>
                             Project 2
                         </td>
+                        <a href="/status">
+                        <td>
+                            <button type="button" class="btn btn-outline-primary btn-sm">Status</button>
+                        </td>
+                        </a>
                     </tr>
                 </tbody>
             </table>
         </div>
-        <button type="button" class="btn btn-primary btn-block" style="border-radius: 100px;">Show more</button>
+        <a href = "/history"><button type="button" class="btn btn-primary btn-block" style="border-radius: 100px;">Show more</button></a>
         <hr class="my-4" />
         <button type="button" class="btn btn-danger btn-block" style="border-radius: 100px;">Logout</button>
     </div>
