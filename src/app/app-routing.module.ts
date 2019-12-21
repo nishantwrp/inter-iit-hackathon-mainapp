@@ -9,6 +9,7 @@ import { HistoryComponent } from './history/history.component';
 import { CameraPageComponent } from './camera-page/camera-page.component';
 import { SuccessPageComponent } from './success-page/success-page.component';
 import { ReviewPageComponent } from './review-page/review-page.component';
+import { ReviewSuccessComponent } from './review-success/review-success.component';
 
 const routes: Routes = [
   {
@@ -42,6 +43,10 @@ const routes: Routes = [
   {
     path: 'review',
     component: ReviewPageComponent
+  },
+  {
+    path: 'review-success',
+    component: ReviewSuccessComponent
   }
 ];
 

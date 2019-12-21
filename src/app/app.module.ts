@@ -16,6 +16,7 @@ import { WebcamModule } from 'ngx-webcam';
 import { CameraPageComponent } from './camera-page/camera-page.component';
 import { SuccessPageComponent } from './success-page/success-page.component';
 import { ReviewPageComponent } from './review-page/review-page.component';
+import { ReviewSuccessComponent } from './review-success/review-success.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { ReviewPageComponent } from './review-page/review-page.component';
     HistoryComponent,
     CameraPageComponent,
     SuccessPageComponent,
-    ReviewPageComponent
+    ReviewPageComponent,
+    ReviewSuccessComponent
   ],
   imports: [
     BrowserModule,
