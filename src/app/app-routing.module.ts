@@ -7,6 +7,8 @@ import { ProfileComponent } from './profile/profile.component';
 import { StatusComponent } from './status/status.component';
 import { HistoryComponent } from './history/history.component';
 import { CameraPageComponent } from './camera-page/camera-page.component';
+import { SuccessPageComponent } from './success-page/success-page.component';
+import { ReviewPageComponent } from './review-page/review-page.component';
 
 const routes: Routes = [
   {
@@ -32,6 +34,14 @@ const routes: Routes = [
   {
     path: 'camera',
     component: CameraPageComponent
+  },
+  {
+    path: 'success',
+    component: SuccessPageComponent
+  },
+  {
+    path: 'review',
+    component: ReviewPageComponent
   }
 ];
 

@@ -293,12 +293,14 @@ export class MapLandingComponent implements AfterViewInit {
     diamond: {
       icon: this.iconBase + 'diamondee.png',
       points: 150,
-      purpose: 'Visit a construction site and click photos of the site to redeem this!'
+      purpose: 'Visit a construction site and click photos of the site to redeem this!',
+      link: '/camera'
     },
     ruby: {
       icon: this.iconBase + '2176077.png',
       points: 200,
-      purpose: 'Visit a maintenance site and click photos of the site to redeem this!'
+      purpose: 'Visit a maintenance site and click photos of the site to redeem this!',
+      link: '/review'
     }
   };
 
@@ -324,7 +326,7 @@ export class MapLandingComponent implements AfterViewInit {
     }
   ];
 
-  getContentString(gem, gempoint, gempur) {
+  getContentString(gem, gempoint, gempur, link) {
     return '<div id="content">' +
     '<div id="siteNotice">' +
     '</div>' +
@@ -332,7 +334,7 @@ export class MapLandingComponent implements AfterViewInit {
     '<div id="bodyContent">' +
     '<p>Collect a ' + gem + ' to get <b>' + gempoint + ' points</b>! ' +
     gempur +
-    '<button type="button" class="btn btn-outline-danger btn-sm" style="top:0.7pc;">Upload photos</button>' +
+    '<a [routerLink]="[' + link + ']"><button type="button" class="btn btn-outline-danger btn-sm" style="top:0.7pc;">Upload photos</button></a>' +
     '</div>' +
     '</div>';
   }
@@ -348,7 +350,8 @@ export class MapLandingComponent implements AfterViewInit {
         content: this.getContentString(
           this.features[i].type,
           this.icons[this.features[i].type].points,
-          this.icons[this.features[i].type].purpose)
+          this.icons[this.features[i].type].purpose,
+          this.icons[this.features[i].type].link)
       });
       // tslint:disable-next-line: prefer-const no-var-keyword
       marker[i] = new google.maps.Marker({

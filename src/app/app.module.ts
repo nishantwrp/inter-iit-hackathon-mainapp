@@ -14,6 +14,8 @@ import { StatusComponent } from './status/status.component';
 import { HistoryComponent } from './history/history.component';
 import { WebcamModule } from 'ngx-webcam';
 import { CameraPageComponent } from './camera-page/camera-page.component';
+import { SuccessPageComponent } from './success-page/success-page.component';
+import { ReviewPageComponent } from './review-page/review-page.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { CameraPageComponent } from './camera-page/camera-page.component';
     MapLandingComponent,
     StatusComponent,
     HistoryComponent,
-    CameraPageComponent
+    CameraPageComponent,
+    SuccessPageComponent,
+    ReviewPageComponent
   ],
   imports: [
     BrowserModule,
