@@ -363,9 +363,16 @@ export class MapLandingComponent implements AfterViewInit {
     }
 
     if (navigator.geolocation) {
+      var initialLocation;
       navigator.geolocation.getCurrentPosition((position) => {
-          const initialLocation = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+          initialLocation = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
           this.map.setCenter(initialLocation);
+          const marker1 = new google.maps.Marker({
+            position: initialLocation,
+            icon: this.iconBase + 'output-onlinepngtools.png',
+            map: this.map,
+          });
+          marker1.setMap(this.map);
       });
     }
   }

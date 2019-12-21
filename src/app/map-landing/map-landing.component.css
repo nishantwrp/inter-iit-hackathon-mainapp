@@ -10,7 +10,6 @@
 #icons {
     position: fixed;
     top: 10px;
-    left: 10px;
     z-index: 99;
     font-family: 'Lilita One', cursive;
     font-size: 1.3pc;
@@ -19,6 +18,20 @@
     1px -1px 0 rgb(255, 255, 255),
     -1px 1px 0 rgb(255, 255, 255),
     1px 1px 0 rgb(255, 255, 255);  
+}
+
+#floatuppericons {
+    margin-left: 0.7pc;
+}
+
+#reportButtonDiv {
+    position: fixed;
+    background-color: #fff;
+    bottom: 0%;
+    height: 25%;
+    width: 100%;
+    padding: 1.2pc;
+    text-align: center;
 }
 
 #map {

@@ -1,11 +1,19 @@
 <div id="container-fluid">
     <div id="icons">
-        <a [routerLink]="['/profile']" routerLinkActive="router-link-active" ><img src="../../assets/images/icons/87-512.png" alt="Profile" width="12%"></a>
-        <span style="padding:1%"><b>My Profile</b></span><br>
-        <img src="../../assets/images/icons/favorites-star-icon-png-0.png" alt="Experience" width="12%">
-        <span style="padding:1%" class="timer" data-to="8321" data-speed="1500"><b>8321</b></span><br>
-        <img src="../../assets/images/icons/138292.png" alt="Coins" width="12%">
-        <span style="padding:1%" class="timer" data-to="234" data-speed="1500"><b>234</b></span>
+        <div id="floatuppericons">
+            <a [routerLink]="['/profile']" routerLinkActive="router-link-active"><img src="../../assets/images/icons/87-512.png" alt="Profile" width="12%"></a>
+            <span style="padding:1%"><b>My Profile</b></span><br>
+            <img src="../../assets/images/icons/favorites-star-icon-png-0.png" alt="Experience" width="12%">
+            <span style="padding:1%" class="timer" data-to="8321" data-speed="1500"><b>8321</b></span><br>
+            <img src="../../assets/images/icons/138292.png" alt="Coins" width="12%">
+            <span style="padding:1%" class="timer" data-to="234" data-speed="1500"><b>234</b></span>
+        </div>
+
+        <div id="reportButtonDiv">
+            Found a gem?!<br>
+            <small>Upload a photo and get verified to redeem</small>
+            <button type="button" class="btn btn-danger" style="border-radius: 40px; font-size: 1.3pc; margin-top: 1pc; width: 69%;">Take a photo!</button>
+        </div>
     </div>
     <div #mapContainer id="map"></div>
 </div>
